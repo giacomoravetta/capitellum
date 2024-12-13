@@ -29,10 +29,9 @@
 
 	function updateTransform() {
 		if (cylinder) {
-			const snapAngle = 60; // Angle between faces
+			const snapAngle = 60;
 			const halfSnapAngle = snapAngle / 2;
 
-			// Calculate nearest multiple of 60 degrees
 			let snappedRotation = Math.round((rotationY + halfSnapAngle) / snapAngle) * snapAngle;
 
 			cylinder.style.transform = `rotateY(${snappedRotation}deg)`;
